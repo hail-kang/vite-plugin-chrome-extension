@@ -221,6 +221,15 @@
                         "type": "boolean",
                         "description": "Whether to insert the content script on about:blank and about:srcdoc.",
                         "default": false
+                    },
+                    "world": {
+                        "type": "string",
+                        "description": "The JavaScript world for a script to execute within.",
+                        "enum": [
+                            "ISOLATED",
+                            "MAIN"
+                        ],
+                        "default": "ISOLATED"
                     }
                 }
             }
